@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-style: italic;
 }
 
-.App-link {
-  color: #61dafb;
+.price-block{
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+gap: 30px;
+padding: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.condition{
+ text-align: left;
+    font-size: 15px;
+}
+.deactive{
+  color: grey;
+}
+
+.price-card{
+  padding: 2%;
+  width: 250px;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.2s;
+
+}
+
+.category{
+  font-size: 18px;
+  color: rgb(151, 146, 146);
+  font-weight: bold;
+}
+
+.amount{
+  font-size: 45px;
+}
+
+button{
+  font-weight: bold;
+  background-color: #656d7c;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 7%;
+  width: 250px;
+  transition: all 0.2s;
+}
+
+
+  .price-card:hover 
+{
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 0 0.5rem 0rem 0 rgb(245, 244, 240);
+
+}
+.price-card:hover button
+{
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(12, 11, 11);
+  background-color: #282c34;
+}
+
+button:active {
+  transform: scale(0.99);
 }
