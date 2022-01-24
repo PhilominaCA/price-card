@@ -5,7 +5,7 @@ import { ImCross } from 'react-icons/im';
 import { Pricecard } from './Pricecard';
 
 function App() {
-  return (
+  return <>
     <div className="App">
       <header className="App-header">
         <h1>Price Card</h1>
@@ -16,7 +16,7 @@ function App() {
         ))}
       </div>
     </div>
-  );
+    </>
 }
 
 export default App;

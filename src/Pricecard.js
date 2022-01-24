@@ -1,7 +1,7 @@
 import { ActiveConditions, DactiveConditions } from './App';
 
 export function Pricecard({ category, amount, active, dactive }) {
-  return (
+  return <>
     <div className="price-card">
       <span className="category">{category}</span>
       <p><span className="amount">${amount}</span>/month</p>
@@ -12,5 +12,5 @@ export function Pricecard({ category, amount, active, dactive }) {
       </div>
       <button> SUBSCRIBE </button>
         </div>
-  );
+        </>
 }
